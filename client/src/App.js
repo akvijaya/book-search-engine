@@ -1,7 +1,6 @@
 import React from 'react';
-import { ApolloProvider, InMemoryCache, createHttpLink } from '@apollo/client';
+import { ApolloProvider, ApolloClient, InMemoryCache, createHttpLink } from '@apollo/client';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import ApolloClient from "apollo-boost";
 import { setContext } from '@apollo/client/link/context';
 
 import SearchBooks from './pages/SearchBooks';
